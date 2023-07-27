@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delivery03</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Delivery03;
+		--web-view-id: Delivery03;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Delivery03;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Delivery03 {
+		position: absolute;
+		width: 390px;
+		height: 844px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: Delivery03;
+		--web-view-id: Delivery03;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#ID5_qrcode {
+		position: absolute;
+		width: 390px;
+		height: 844px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Delivery04.html;
+		cursor: pointer;
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="js/Delivery03.js"></script>
+</head>
+<body>
+<div id="Delivery03">
+	<img onclick="application.goToTargetView(event)" id="ID5_qrcode" src="images/ID5_qrcode.png" srcset="images/ID5_qrcode.png 1x, images/ID5_qrcode@2x.png 2x">
+		
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pickup03</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: pickup03;
+		--web-view-id: pickup03;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: pickup03;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#pickup03 {
+		position: absolute;
+		width: 390px;
+		height: 844px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: pickup03;
+		--web-view-id: pickup03;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#ID4__c {
+		position: absolute;
+		width: 390px;
+		height: 844px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: pickup04.html;
+		cursor: pointer;
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="js/pickup03.js"></script>
+</head>
+<body>
+<div id="pickup03">
+	<img onclick="application.goToTargetView(event)" id="ID4__c" src="images/ID4__c.png" srcset="images/ID4__c.png 1x, images/ID4__c@2x.png 2x">
+		
+</div>
+</body>
+</html>

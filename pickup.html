@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pickup</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: pickup;
+		--web-view-id: pickup;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: pickup;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#pickup {
+		position: absolute;
+		width: 390px;
+		height: 844px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-view-name: pickup;
+		--web-view-id: pickup;
+		--web-scale-on-resize: true;
+		--web-center-horizontally: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#ID1 {
+		position: absolute;
+		width: 390px;
+		height: 844px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: pickup01.html;
+		cursor: pointer;
+	}
+	#Rectangle_2 {
+		fill: transparent;
+	}
+	.Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 119px;
+		height: 36px;
+		left: 9px;
+		top: 105px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Login10.html;
+		cursor: pointer;
+	}
+	#Rectangle_3 {
+		fill: transparent;
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Rectangle_3 {
+		position: absolute;
+		overflow: visible;
+		width: 117px;
+		height: 36px;
+		left: 258px;
+		top: 105px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: dinein.html;
+		cursor: pointer;
+	}
+</style>
+<script id="applicationScript" type="text/javascript" src="js/pickup.js"></script>
+</head>
+<body>
+<div id="pickup">
+	<img onclick="application.goToTargetView(event)" id="ID1" src="images/ID1.png" srcset="images/ID1.png 1x, images/ID1@2x.png 2x">
+		
+	<svg class="Rectangle_2">
+		<rect onclick="application.goToTargetView(event)" id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="119" height="36">
+		</rect>
+	</svg>
+	<svg class="Rectangle_3">
+		<rect onclick="application.goToTargetView(event)" id="Rectangle_3" rx="0" ry="0" x="0" y="0" width="117" height="36">
+		</rect>
+	</svg>
+</div>
+</body>
+</html>
